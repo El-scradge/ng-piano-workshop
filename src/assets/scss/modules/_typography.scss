@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans|Josefin+Sans');
+
+* {
+
+  color: $white;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Expletus Sans";
+  color: $primary;
+}
+
+.page-header {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 5vh;
+}
+.tagline {
+  fill: white;
+}
+
+.text-align-virt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: lighten($primary, 10%);
+  }
+}

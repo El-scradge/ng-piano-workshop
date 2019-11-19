@@ -1,0 +1,68 @@
+.top-section{
+  margin-top: 20vh;
+}
+
+.temp-spacer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.homepage-tagline{
+  position: relative;
+  top: 15%;
+  padding: 100px;
+  height:50vh;
+
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+section{
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .spacer {
+    padding-bottom: 60px;
+    padding-top: 50px;
+  }
+}
+
+.home-content {
+  position: relative;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5) ),
+          url("/assets/img/pinao-bg2.png");
+  box-shadow: 0 0 2000px black inset;
+  z-index: 1;
+  color: $primary-color;
+  max-height: 60vh;
+}
+
+.dark-content {
+  position: relative;
+  color: $white;
+  box-shadow: 0 0 80px 10px rgba(black,1) ;
+  z-index: 100;
+}
+
+.bg2-content {
+  background-image: url("/assets/img/piano-bg2.jpg");
+  position: relative;
+  background-position-y: -400px;
+
+  z-index: 1;
+}
+
+.image-section {
+  img {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+article.article__main {
+  padding: 20vh 0;
+}

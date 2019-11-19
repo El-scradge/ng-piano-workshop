@@ -1,0 +1,33 @@
+.piano-key--animated {
+  position: relative;
+  &:before {
+    z-index: -1;
+    transition: width ease 0.2s;
+    position: absolute;
+    top:0;
+    left:0;
+    content: '';
+    width: 0;
+    background-color: rgba(white, 0.8);
+    height: 100%;
+  }
+  &:after {
+    transition: width ease 0.2s;
+    position: absolute;
+    bottom: -10px;
+    left: -1px;
+    content: '';
+    width: 0;
+    background-color: black;
+    height: 20px;
+  }
+  &:hover {
+    a { color: black }
+    &:before {
+      width: 100%;
+    }
+    &:after {
+      width: 50px;
+    }
+  }
+}

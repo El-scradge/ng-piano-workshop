@@ -1,0 +1,25 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background: black;
+  color: $white;
+}
+.main-app{
+  height: 1000px;
+  box-shadow: 0 0 10px rgba(black, 0.5);
+}
+
+.intro-logo {
+  margin: 0 auto;
+  width: 300px;
+  img {
+    transform: translateY(150px);
+
+  }
+}
+
+.homepage-contact {
+  text-align: center;
+  width: 100%;
+}
+.contact-list {
+    }

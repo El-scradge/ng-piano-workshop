@@ -1,0 +1,50 @@
+
+.header-image {
+  display: none;
+}
+@include breakpoint(large){
+  .header-image {
+    display: inline-block;
+  }
+}
+header {
+
+  height:100px;
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+
+  .header-image{
+
+    img{
+      width:180px;
+    }
+  }
+
+  nav {
+    display: flex;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      padding: $baseline/2;
+      li {
+        span {
+          padding: 0;
+        }
+        color: $white;
+        list-style: none;
+        border-left: solid rgba($white, 0.5) 1px ;
+        padding: $baseline/4 $baseline/2;
+        &:hover {
+          cursor: pointer;
+          color: $primary;
+          border-color: $primary;
+        }
+        &:first-child {
+          border: none;
+        }
+      }
+    }
+
+  }
+}
