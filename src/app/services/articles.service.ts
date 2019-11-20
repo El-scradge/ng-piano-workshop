@@ -1,4 +1,7 @@
 import { Injectable } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import { environment} from '../../environments/environment';
+import {ApiCallsService} from "./api-calls.service";
 
 export interface Article {
   id: number;
@@ -13,37 +16,24 @@ export interface Article {
 })
 export class ArticlesService {
 
-  articles: Article[] = [
-    {
-      id: 0,
-      title: 'Title 1',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias debitis fugiat in nobis officiis placeat porro tenetur. Aliquid aspernatur dolorem eligendi et, illum ipsum nulla qui quidem quis sed, voluptas!',
-      bg: 'dark-content',
-      image: '',
-      shown: true
-    },
-    {
-      id: 1,
-      title: 'Title 1',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias debitis fugiat in nobis officiis placeat porro tenetur. Aliquid aspernatur dolorem eligendi et, illum ipsum nulla qui quidem quis sed, voluptas!',
-      bg: 'bg2-content',
-      image: '',
-      shown: true
-    },
-    {
-      id: 2,
-      title: 'Title 1',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias debitis fugiat in nobis officiis placeat porro tenetur. Aliquid aspernatur dolorem eligendi et, illum ipsum nulla qui quidem quis sed, voluptas!',
-      bg: 'dark-content',
-      image: '',
-      shown: true
-    }
-  ]
-  constructor() {
+  polishing;
+  articles;
+  constructor(
+    private apiCalls: ApiCallsService) {
 
   }
 
-  getArticles() {
-    return this.articles;
+  /**
+   * getters for all of the various articles across the site
+   */
+
+  getArticlesPolishing() {
+    return this.apiCalls.getData({type: 'polishing'})
+  }
+  saveArticlesPolishing(data) {
+    this.apiCalls.setData(data).subscribe(response => {
+      console.log(response);
+    }, errors => { console.log(errors); }
+    );
   }
 }

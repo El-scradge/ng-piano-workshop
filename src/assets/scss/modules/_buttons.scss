@@ -31,3 +31,18 @@
     }
   }
 }
+
+.btn-edit {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  z-index: 20;
+}
+
+button {
+  background-color: $primary;
+  color: black;
+  :disabled {
+    background-color: darken($primary, 10%);
+  }
+}

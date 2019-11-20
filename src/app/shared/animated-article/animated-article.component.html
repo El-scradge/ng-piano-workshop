@@ -1,8 +1,8 @@
-<section class="grid-x {{article.bg}}">
+<section class="grid-x {{article.attributes.bg}}-content">
     <div class="container temp-spacer">
         <article [@loadTrigger]="'inLeft'" class="article__main">
-            <h3>{{article.title}}</h3>
-            <p>{{article.text}}</p>
+            <h3>{{article.attributes.title}}</h3>
+            <p>{{article.attributes.content}}</p>
         </article>
     </div>
 </section>

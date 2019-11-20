@@ -12,6 +12,9 @@ import { AboutComponent } from './about/about.component';
 import {RouterModule} from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
+import {ArticlesService} from "./services/articles.service";
+import {ApiCallsService} from "./services/api-calls.service";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -28,9 +31,14 @@ import {HttpClientModule} from '@angular/common/http';
     SharedModule,
     RouterModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [SharedModule],
+  providers: [
+    SharedModule,
+    ArticlesService,
+    ApiCallsService
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
