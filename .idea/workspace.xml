@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9e87e8f-1495-4c8f-bc99-430ffcd921d8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/modal/confirm/confirm.component.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/modal/confirm/confirm.component.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/modal/confirm/confirm.component.spec.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/modal/confirm/confirm.component.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/modal/insertion.directive.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/modal/modal-config.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/modal/modal-injector.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/modal/modal-ref.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/modal/modal.component.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/modal/modal.component.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/modal/modal.component.spec.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/modal/modal.component.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/modal/modal.module.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/modal/modal.service.spec.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app/shared/modal/modal.service.ts" />
-      <change beforePath="$PROJECT_DIR$/angular.json" afterPath="$PROJECT_DIR$/angular.json" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.html" afterPath="$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.ts" afterPath="$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/articles.service.ts" afterPath="$PROJECT_DIR$/src/app/services/articles.service.ts" />
       <change beforePath="$PROJECT_DIR$/src/app/shared/animated-article/animated-article.component.html" afterPath="$PROJECT_DIR$/src/app/shared/animated-article/animated-article.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/shared.module.ts" afterPath="$PROJECT_DIR$/src/app/shared/shared.module.ts" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/_variables.scss" afterPath="$PROJECT_DIR$/src/assets/scss/_variables.scss" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/modules/_buttons.scss" afterPath="$PROJECT_DIR$/src/assets/scss/modules/_buttons.scss" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" afterPath="$PROJECT_DIR$/src/environments/environment.ts" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.ts" afterPath="$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.ts" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/modules/_sections.scss" afterPath="$PROJECT_DIR$/src/assets/scss/modules/_sections.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -96,8 +74,8 @@
           <file leaf-file-name="animated-article.component.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/shared/animated-article/animated-article.component.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="56" lean-forward="false" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
+                <state relative-caret-position="90">
+                  <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -118,8 +96,8 @@
           <file leaf-file-name="_sections.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/assets/scss/modules/_sections.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="667">
+                  <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -204,8 +182,8 @@
           <file leaf-file-name="form-add-article.component.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+                <state relative-caret-position="480">
+                  <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
                   <folding>
                     <element signature="e#0#50#0" expanded="true" />
                   </folding>
@@ -254,9 +232,10 @@
         <option value="$PROJECT_DIR$/src/app/shared/shared.module.ts" />
         <option value="$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.html" />
         <option value="$PROJECT_DIR$/src/app/services/articles.service.ts" />
-        <option value="$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.ts" />
         <option value="$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.ts" />
         <option value="$PROJECT_DIR$/src/app/services/api-calls.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.ts" />
+        <option value="$PROJECT_DIR$/src/assets/scss/modules/_sections.scss" />
         <option value="$PROJECT_DIR$/src/app/shared/animated-article/animated-article.component.html" />
       </list>
     </option>
@@ -454,12 +433,12 @@
       <option name="presentableId" value="Default" />
       <updated>1574193615358</updated>
       <workItem from="1574193616862" duration="77000" />
-      <workItem from="1574194247672" duration="10244000" />
+      <workItem from="1574194247672" duration="11014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10321000" />
+    <option name="totallyTimeSpent" value="11091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="61" width="1832" height="1359" extended-state="0" />
@@ -574,14 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/scss/modules/_sections.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/shared/shared.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -626,16 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/shared/modal/confirm/confirm.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -672,6 +633,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/shared/animated-article/animated-article.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -680,10 +651,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/scss/modules/_sections.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/shared/animated-article/animated-article.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="56" lean-forward="false" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
+        <state relative-caret-position="90">
+          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
           <folding />
         </state>
       </provider>

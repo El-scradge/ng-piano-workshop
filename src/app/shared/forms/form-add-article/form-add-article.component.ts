@@ -31,7 +31,6 @@ export class FormAddArticleComponent implements OnInit {
    */
 
   onAddArticle(formData) {
-
     const data = {type: this.inputData.type, attributes: formData.form.value};
 
     this.modal.close(data);
