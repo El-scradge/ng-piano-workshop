@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f9e87e8f-1495-4c8f-bc99-430ffcd921d8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.ts" afterPath="$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/api-calls.service.ts" afterPath="$PROJECT_DIR$/src/app/services/api-calls.service.ts" />
       <change beforePath="$PROJECT_DIR$/src/app/services/articles.service.ts" afterPath="$PROJECT_DIR$/src/app/services/articles.service.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.ts" afterPath="$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.ts" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/modal/modal.component.ts" afterPath="$PROJECT_DIR$/src/app/shared/modal/modal.component.ts" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +17,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.5648907">
       <split-first>
         <leaf>
-          <file leaf-file-name="api-calls.service.ts" pinned="false" current-in-tab="true">
+          <file leaf-file-name="api-calls.service.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/services/api-calls.service.ts">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="45">
@@ -26,26 +25,6 @@
                   <folding>
                     <element signature="e#0#43#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="confirm.component.ts" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/shared/modal/confirm/confirm.component.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="polishing.component.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -73,10 +52,32 @@
           <file leaf-file-name="polishing.component.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="607">
-                  <caret line="51" column="27" lean-forward="false" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+                <state relative-caret-position="382">
+                  <caret line="35" column="61" lean-forward="false" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
                   <folding>
                     <element signature="e#0#50#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="modal.component.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/shared/modal/modal.component.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="modal.component.ts" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/app/shared/modal/modal.component.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="154">
+                  <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+                  <folding>
+                    <element signature="e#0#160#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -129,9 +130,11 @@
           <file leaf-file-name="articles.service.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/services/articles.service.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-                  <folding />
+                <state relative-caret-position="525">
+                  <caret line="35" column="55" lean-forward="false" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+                  <folding>
+                    <element signature="e#0#43#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -251,9 +254,10 @@
         <option value="$PROJECT_DIR$/src/assets/scss/modules/_sections.scss" />
         <option value="$PROJECT_DIR$/src/app/shared/animated-article/animated-article.component.html" />
         <option value="$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/services/articles.service.ts" />
         <option value="$PROJECT_DIR$/src/app/services/api-calls.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/services/articles.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/shared/modal/modal.component.ts" />
       </list>
     </option>
   </component>
@@ -355,37 +359,13 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="shared" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="forms" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ng-piano-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ng-piano-workshop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="shared" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="forms" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="form-add-article" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modal" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ng-piano-workshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="ng-piano-workshop" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ng-piano-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ng-piano-workshop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ng-piano-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ng-piano-workshop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ng-piano-workshop" type="b2602c69:ProjectViewProjectNode" />
@@ -457,12 +437,12 @@
       <option name="presentableId" value="Default" />
       <updated>1574193615358</updated>
       <workItem from="1574193616862" duration="77000" />
-      <workItem from="1574194247672" duration="12260000" />
+      <workItem from="1574194247672" duration="12552000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12337000" />
+    <option name="totallyTimeSpent" value="12629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="61" width="1832" height="1359" extended-state="0" />
@@ -693,30 +673,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/services/articles.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="51" column="27" lean-forward="false" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/services/api-calls.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/services/articles.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="55" lean-forward="false" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="35" column="61" lean-forward="false" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/modal/modal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/shared/modal/modal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#160#0" expanded="true" />
           </folding>
         </state>
       </provider>

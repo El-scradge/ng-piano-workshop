@@ -27,9 +27,13 @@ export class ArticlesService {
   getArticlesPolishing() {
     return this.apiCalls.getData({type: 'polishing'});
   }
+
+  /**
+   * saves the data from all articles to the firebase server
+   * @param data
+   */
   saveArticlesPolishing(data) {
     this.apiCalls.setData(data).subscribe(response => {
-      console.log(response);
     }, errors => { console.log(errors); }
     );
   }

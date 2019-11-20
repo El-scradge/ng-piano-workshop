@@ -33,11 +33,11 @@ export class PolishingComponent implements OnInit {
 
   /**
    * opens the modal for creating articles on the page
+   * This is returned from the after close area of the modal.
    */
   onAddItem() {
     this.modal.open(FormAddArticleComponent, {data: {type: this.type, title: 'Create Article on page' + this.type}})
       .afterClosed.subscribe( response => {
-        console.log(response);
         this.articleService.saveArticlesPolishing(response);
         this.getArticles();
     });
@@ -48,7 +48,6 @@ export class PolishingComponent implements OnInit {
    */
   getArticles() {
   this.articleService.getArticlesPolishing().subscribe( data => {
-      console.log(data);
       this.articles = data;
     });
   }
