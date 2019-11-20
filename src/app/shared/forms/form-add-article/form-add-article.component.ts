@@ -10,6 +10,9 @@ import {ModalConfig} from "../../modal/modal-config";
 })
 export class FormAddArticleComponent implements OnInit {
 
+  /**
+   * input data from the modal, this is set from the config
+   */
   public inputData;
 
   constructor(

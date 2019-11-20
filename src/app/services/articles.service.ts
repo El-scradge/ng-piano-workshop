@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import { environment} from '../../environments/environment';
-import {ApiCallsService} from "./api-calls.service";
+import { ApiCallsService } from './api-calls.service';
 
 export interface Article {
   id: number;
@@ -10,14 +8,13 @@ export interface Article {
   bg: string;
   image: string;
   shown: boolean;
-};
+}
 @Injectable({
   providedIn: 'root'
 })
 export class ArticlesService {
 
-  polishing;
-  articles;
+
   constructor(
     private apiCalls: ApiCallsService) {
 
@@ -28,7 +25,7 @@ export class ArticlesService {
    */
 
   getArticlesPolishing() {
-    return this.apiCalls.getData({type: 'polishing'})
+    return this.apiCalls.getData({type: 'polishing'});
   }
   saveArticlesPolishing(data) {
     this.apiCalls.setData(data).subscribe(response => {
