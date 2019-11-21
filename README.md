@@ -4,13 +4,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Project outline,
 
-The Piano workshop site is being developed as a way for the team to edit and update content for the website,
+The Piano workshop site is being developed for The Piano workshop restoration company as a way for the team to edit and update content for the website.
 
 The API utilises a firebase database hooked to an in progress dynamic api endpoint selector which is selected from the 'type' in the data object.
 
 Data opjects are a simplified JSON-API transformed to work in the firebase format. (saving edited versions still in progress)
 
 ## To do
+
+Cleanup of SASS code from Ember application
 
 uploading of images.. (standard base 64 encoding should work if i want to store them in the database)
 
@@ -20,7 +22,11 @@ Authentication for users based on firebase users area
 
 Edit mode, so that all editing functions are turned off unless logged in.
 
-Responsive mode, and mobile only menu. 
+responsive mode, and mobile only menu. 
+
+Teachers database for piano tutors in the area (data to be moved from old MySQL database)
+
+Pianos for sale page.
 
 
 ## Development server
