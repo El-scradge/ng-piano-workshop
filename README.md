@@ -13,9 +13,13 @@ Data opjects are a simplified JSON-API transformed to work in the firebase forma
 ## To do
 
 uploading of images.. (standard base 64 encoding should work if i want to store them in the database)
+
 News feed on the front end.
+
 Authentication for users based on firebase users area
+
 Edit mode, so that all editing functions are turned off unless logged in.
+
 Responsive mode, and mobile only menu. 
 
 
