@@ -1,11 +1,11 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {loadTrigger} from '../animations/main.animations';
+import {loadTriggerLeft} from '../animations/main.animations';
 
 @Component({
   selector: 'app-animated-article',
   templateUrl: './animated-article.component.html',
   styleUrls: ['./animated-article.component.scss'],
-  animations: [loadTrigger]
+  animations: [loadTriggerLeft]
 })
 export class AnimatedArticleComponent implements OnInit {
 

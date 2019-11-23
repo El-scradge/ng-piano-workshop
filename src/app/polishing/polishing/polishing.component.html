@@ -4,4 +4,8 @@
         <div class="top-section"><H1>French Polishing</H1></div>
     </div>
 </section>
-<app-animated-article *ngFor="let article of articles" [article]="article"></app-animated-article>
+
+<ng-container *ngFor="let article of articles; let i = index">
+    <app-animated-article-left [article]="article" *ngIf="i%2 == 0"> </app-animated-article-left>
+    <app-animated-article-right [article]="article" *ngIf="i%2 == 1"> </app-animated-article-right>
+</ng-container>

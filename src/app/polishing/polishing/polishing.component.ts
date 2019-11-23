@@ -13,7 +13,7 @@ export class PolishingComponent implements OnInit {
   /**
    * The articles to be used on the page.
    */
-  articles: {id: string, type: string, attribututes: Article};
+  articles;
 
   /**
    * sets the type of article for the page, so that the correct url is used.
@@ -48,7 +48,7 @@ export class PolishingComponent implements OnInit {
    */
   getArticles() {
   this.articleService.getArticlesPolishing().subscribe( data => {
-      this.articles = data;
+      this.articles= data;
     });
   }
 
