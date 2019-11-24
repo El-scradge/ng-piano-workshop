@@ -2,11 +2,11 @@
     <div class="grid-x">
         <div class="large-6 small-12">
             <label for="title">Title</label>
-            <input ngModel type="text" id="title" name="title" required>
+            <input type="text" id="title" name="title" required [(ngModel)]="formData.title" >
         </div>
         <div class="large-6 small-12">
             <label for="bg">Select background</label>
-            <select name="bg" id="bg" ngModel>
+            <select name="bg" id="bg" [(ngModel)]="formData.bg">
                 <option value="home">Black Piano</option>
                 <option value="bg2">Light Piano</option>
                 <option value="dark">Dark</option>
@@ -15,6 +15,6 @@
     </div>
 
     <label for="content">Area Content</label>
-    <textarea ngModel name="content" id="content" cols="30" rows="10"></textarea>
+    <textarea [(ngModel)]="formData.content" name="content" id="content" cols="30" rows="10"></textarea>
     <button class="button" type="submit" [disabled]="!articleForm.valid">Save</button>
 </form>

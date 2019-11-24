@@ -12,17 +12,22 @@ import {ArticlesService} from "../../services/articles.service";
 })
 export class AnimatedArticleLeftComponent implements OnInit {
 
+  type;
   @Input() article;
   constructor(
     private modal: ModalService,
     private articleService: ArticlesService
-  ) { }
+  ) {
+
+
+  }
 
   ngOnInit() {
+    this.type = this.article.type;
   }
 
   editArticle() {
-    this.modal.open(FormAddArticleComponent, {data: {title: 'Edit Article', content: this.article}})
+    this.modal.open(FormAddArticleComponent, {data: {title: 'Edit Article', content: this.article, type: this.type}})
       .afterClosed.subscribe( response => {
       this.articleService.saveArticlesPolishing(response);
     });

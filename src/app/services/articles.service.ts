@@ -39,10 +39,20 @@ export class ArticlesService {
    * @param data
    */
   saveArticlesPolishing(data) {
-    this.apiCalls.setData(data).subscribe(
-      response => {
-    },
-      errors => { console.log(errors); }
-    );
+
+    if (data.id) {
+      this.apiCalls.updateData(data).subscribe(
+        response => {
+        },
+        errors => { console.log(errors); }
+      );
+    } else {
+      this.apiCalls.setData(data).subscribe(
+        response => {
+        },
+        errors => { console.log(errors); }
+      );
+    }
+
   }
 }

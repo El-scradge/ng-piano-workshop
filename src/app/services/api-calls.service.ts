@@ -26,6 +26,11 @@ export class ApiCallsService {
     return this.http.post<ApiObject>(environment.api + data.type + '.json', data);
   }
 
+  updateData(data) {
+    const dataToSubmit = {[data.id]: data};
+    return this.http.patch(environment.api + data.type + '.json', dataToSubmit);
+  }
+
   /**
    * Gets any data requested from the firebase server based on the type given
    * @param data

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { ModalRef } from '../../modal/modal-ref';
 import {ModalConfig} from "../../modal/modal-config";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-form-add-article',
@@ -15,6 +16,9 @@ export class FormAddArticleComponent implements OnInit {
    */
   public inputData;
 
+  private formData;
+
+  private id;
   constructor(
     private modal: ModalRef,
     public config: ModalConfig
@@ -23,6 +27,11 @@ export class FormAddArticleComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(this.inputData);
+    if(this.inputData.content.id){
+      this.formData = this.inputData.content.attributes;
+      this.id = this.inputData.content.id;
+    }
   }
 
   /**
@@ -33,8 +42,8 @@ export class FormAddArticleComponent implements OnInit {
    * @param formData
    */
 
-  onAddArticle(formData) {
-    const data = {type: this.inputData.type, attributes: formData.form.value};
+  onAddArticle(formData: NgForm) {
+    const data = {type: this.inputData.type, attributes: formData.form.value, id: this.id};
 
     this.modal.close(data);
   }
