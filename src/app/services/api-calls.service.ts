@@ -3,6 +3,12 @@ import {HttpClient} from "@angular/common/http";
 import {environment} from "../../environments/environment";
 import { map } from 'rxjs/operators';
 
+export interface ApiObject {
+  id: string;
+  type: string;
+  attributes: object;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -17,8 +23,7 @@ export class ApiCallsService {
    * @returns {Observable<Object>}
    */
   setData(data) {
-    const type = data.type;
-    return this.http.post(environment.api + type + '.json', data);
+    return this.http.post<ApiObject>(environment.api + data.type + '.json', data);
   }
 
   /**
@@ -27,8 +32,7 @@ export class ApiCallsService {
    * @returns {Observable<Object>}
    */
   getData(data) {
-    const type = data.type;
-    return this.http.get(environment.api + type + '.json').pipe(
+    return this.http.get<ApiObject>(environment.api + data.type + '.json').pipe(
       map(response => {
         const articleArray = [];
         for (const key in  response) {

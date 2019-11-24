@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Article, ArticlesService } from '../../services/articles.service';
 import { ModalService } from '../../shared/modal/modal.service';
 import { FormAddArticleComponent } from '../../shared/forms/form-add-article/form-add-article.component';
+import {ApiObject} from "../../services/api-calls.service";
 
 @Component({
   selector: 'app-polishing',
@@ -13,7 +14,7 @@ export class PolishingComponent implements OnInit {
   /**
    * The articles to be used on the page.
    */
-  articles;
+  articles: ApiObject[];
 
   /**
    * sets the type of article for the page, so that the correct url is used.
@@ -48,7 +49,7 @@ export class PolishingComponent implements OnInit {
    */
   getArticles() {
   this.articleService.getArticlesPolishing().subscribe( data => {
-      this.articles= data;
+      this.articles = data;
     });
   }
 

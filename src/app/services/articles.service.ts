@@ -1,14 +1,20 @@
 import { Injectable } from '@angular/core';
-import { ApiCallsService } from './api-calls.service';
+import {ApiCallsService, ApiObject} from './api-calls.service';
 
-export interface Article {
-  id: number;
-  title: string;
-  text: string;
-  bg: string;
-  image: string;
-  shown: boolean;
+/**
+ * Article interface,
+ */
+
+export interface Article extends ApiObject {
+  attributes: {
+    title: string;
+    content: string;
+    bg: string;
+    image?: string;
+    shown: boolean;
+  };
 }
+
 @Injectable({
   providedIn: 'root'
 })
@@ -33,8 +39,10 @@ export class ArticlesService {
    * @param data
    */
   saveArticlesPolishing(data) {
-    this.apiCalls.setData(data).subscribe(response => {
-    }, errors => { console.log(errors); }
+    this.apiCalls.setData(data).subscribe(
+      response => {
+    },
+      errors => { console.log(errors); }
     );
   }
 }
