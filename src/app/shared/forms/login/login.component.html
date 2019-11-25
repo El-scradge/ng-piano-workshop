@@ -1,0 +1,8 @@
+<h3>Please Log In</h3>
+<form (ngSubmit)="onLoginAction(loginForm)" #loginForm="ngForm">
+    <label for="username">Username (email address)</label>
+    <input id="username" type="email" name="username" ngModel required>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" ngModel required>
+    <button class="button" type="submit" [disabled]="!loginForm.valid">Log in</button>
+</form>

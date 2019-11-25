@@ -11,6 +11,7 @@ import {ModalService} from "./modal/modal.service";
 import {FormsModule} from "@angular/forms";
 import { AnimatedArticleLeftComponent } from './animated-article-left/animated-article-left.component';
 import { AnimatedArticleRightComponent } from './animated-article-right/animated-article-right.component';
+import { LoginComponent } from './forms/login/login.component';
 
 
 
@@ -21,7 +22,8 @@ import { AnimatedArticleRightComponent } from './animated-article-right/animated
     AnimatedArticleComponent,
     FormAddArticleComponent,
     AnimatedArticleLeftComponent,
-    AnimatedArticleRightComponent
+    AnimatedArticleRightComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,
