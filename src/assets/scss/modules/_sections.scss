@@ -12,7 +12,6 @@
   top: 15%;
   padding: 100px;
   height:50vh;
-
 }
 
 section{
@@ -32,10 +31,12 @@ section{
   background-image: linear-gradient( rgba(0, 0, 0, 0.5),
           rgba(0, 0, 0, 0.5) ),
           url("/assets/img/pinao-bg2.png");
-  box-shadow: 0 0 2000px black inset;
   z-index: 1;
   color: $primary-color;
   max-height: 60vh;
+   h1 {
+     text-align: center;
+   }
 }
 
 .dark-content {
