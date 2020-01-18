@@ -16,7 +16,7 @@ export class FormAddArticleComponent implements OnInit {
    */
   public inputData;
 
-  private formData;
+  public formData = { title: '', content: '',};
 
   private id;
   constructor(
@@ -28,7 +28,7 @@ export class FormAddArticleComponent implements OnInit {
 
   ngOnInit() {
     console.log(this.inputData);
-    if(this.inputData.content.id){
+    if (this.inputData.content.id) {
       this.formData = this.inputData.content.attributes;
       this.id = this.inputData.content.id;
     }
@@ -44,7 +44,7 @@ export class FormAddArticleComponent implements OnInit {
 
   onAddArticle(formData: NgForm) {
     const data = {type: this.inputData.type, attributes: formData.form.value, id: this.id};
-
+    console.log('form data', data);
     this.modal.close(data);
   }
 }

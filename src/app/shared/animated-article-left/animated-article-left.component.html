@@ -6,6 +6,6 @@
             <p>{{article.attributes.content}}</p>
         </article>
     </div>
-    <button class="button btn-edit" (click)="editArticle()">edit</button>
+    <button class="button btn-edit" *ngIf="editMode" (click)="editArticle()">edit</button>
 </section>
 

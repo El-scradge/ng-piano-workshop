@@ -30,25 +30,27 @@ export class ArticlesService {
    * getters for all of the various articles across the site
    */
 
-  getArticlesPolishing() {
-    return this.apiCalls.getData({type: 'polishing'});
+  getArticles(type) {
+    return this.apiCalls.getData({type: type});
   }
 
   /**
    * saves the data from all articles to the firebase server
    * @param data
    */
-  saveArticlesPolishing(data) {
+  saveArticles(data) {
 
     if (data.id) {
       this.apiCalls.updateData(data).subscribe(
         response => {
+          console.log('saved data ', data);
         },
         errors => { console.log(errors); }
       );
     } else {
       this.apiCalls.setData(data).subscribe(
         response => {
+          console.log('saved data ', data);
         },
         errors => { console.log(errors); }
       );

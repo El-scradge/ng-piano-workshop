@@ -15,6 +15,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {ArticlesService} from "./services/articles.service";
 import {ApiCallsService} from "./services/api-calls.service";
 import {FormsModule} from "@angular/forms";
+import {AngularFireAuth} from "@angular/fire/auth";
+import {AngularFireModule} from "@angular/fire";
 
 @NgModule({
   declarations: [
@@ -32,12 +34,14 @@ import {FormsModule} from "@angular/forms";
     RouterModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+      AngularFireModule.initializeApp()
   ],
   providers: [
     SharedModule,
     ArticlesService,
-    ApiCallsService
+    ApiCallsService,
+      AngularFireAuth
     ],
   bootstrap: [AppComponent]
 })
