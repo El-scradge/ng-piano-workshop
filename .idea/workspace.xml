@@ -36,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nt-angular-test" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -98,6 +98,12 @@
       <workItem from="1579117280848" duration="3543000" />
       <workItem from="1579199583105" duration="2523000" />
       <workItem from="1579351090868" duration="337000" />
+      <workItem from="1579352304088" duration="485000" />
+      <workItem from="1579352844176" duration="610000" />
+      <workItem from="1579354555384" duration="1731000" />
+      <workItem from="1579364758044" duration="4030000" />
+      <workItem from="1579430414069" duration="9000000" />
+      <workItem from="1579527169685" duration="1414000" />
     </task>
     <servers />
   </component>
@@ -105,6 +111,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="748" y="456" key="FileChooserDialogImpl" timestamp="1579528726078">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="748" y="456" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1579528726078" />
     <state width="1877" height="176" key="GridCell.Tab.0.bottom" timestamp="1579202519451">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
