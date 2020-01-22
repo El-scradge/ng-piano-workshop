@@ -51,7 +51,17 @@
       <recent name="$PROJECT_DIR$/src/app/shared" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -64,6 +74,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -117,22 +128,22 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="748" y="456" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1579528726078" />
-    <state width="1877" height="176" key="GridCell.Tab.0.bottom" timestamp="1579202519451">
+    <state width="1877" height="287" key="GridCell.Tab.0.bottom" timestamp="1579694701619">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1579202519451" />
-    <state width="1877" height="176" key="GridCell.Tab.0.center" timestamp="1579202519451">
+    <state width="1877" height="287" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1579694701619" />
+    <state width="1877" height="287" key="GridCell.Tab.0.center" timestamp="1579694701618">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1579202519451" />
-    <state width="1877" height="176" key="GridCell.Tab.0.left" timestamp="1579202519451">
+    <state width="1877" height="287" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1579694701618" />
+    <state width="1877" height="287" key="GridCell.Tab.0.left" timestamp="1579694701617">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1579202519451" />
-    <state width="1877" height="176" key="GridCell.Tab.0.right" timestamp="1579202519451">
+    <state width="1877" height="287" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1579694701617" />
+    <state width="1877" height="287" key="GridCell.Tab.0.right" timestamp="1579694701619">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1877" height="176" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1579202519451" />
+    <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1579694701619" />
     <state x="624" y="332" key="run.anything.popup" timestamp="1579200438224">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
