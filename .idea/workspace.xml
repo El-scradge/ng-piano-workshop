@@ -44,7 +44,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
-    <property name="ts.external.directory.path" value="C:\Users\scradge\Code\ng-piano-workshop\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -104,6 +104,8 @@
       <workItem from="1579364758044" duration="4030000" />
       <workItem from="1579430414069" duration="9000000" />
       <workItem from="1579527169685" duration="1414000" />
+      <workItem from="1579530317445" duration="827000" />
+      <workItem from="1579694430966" duration="201000" />
     </task>
     <servers />
   </component>

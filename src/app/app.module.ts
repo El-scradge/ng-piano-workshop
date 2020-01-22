@@ -35,13 +35,12 @@ import {AngularFireModule} from "@angular/fire";
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-      AngularFireModule.initializeApp()
+
   ],
   providers: [
     SharedModule,
     ArticlesService,
     ApiCallsService,
-      AngularFireAuth
     ],
   bootstrap: [AppComponent]
 })

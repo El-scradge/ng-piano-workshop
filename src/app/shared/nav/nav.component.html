@@ -1,20 +1,19 @@
 <button class="button btn--edit-home"
-                 *ngIf="loginService.user$ | async"
                  (click)="toggleEditMode()">
     Edit mode toggle
 </button>
-<button class="button btn--edit-home"
-                 *ngIf="loginService.user$ | async; else login "
-                 (click)="loginService.googleSignOut()">
-    Log out
-</button>
-<ng-template #login>
-    <button class="button btn--edit-home"
-                            *ngIf="loginService.user$ | async"
-                            (click)="loginService.googleSignin()">
-    Login
-</button>
-</ng-template>
+<!--<button class="button btn&#45;&#45;edit-home"-->
+<!--                 *ngIf="loginService.user$ | async; else login "-->
+<!--                 (click)="loginService.googleSignOut()">-->
+<!--    Log out-->
+<!--</button>-->
+<!--<ng-template #login>-->
+<!--    <button class="button btn&#45;&#45;edit-home"-->
+<!--                            *ngIf="loginService.user$ | async"-->
+<!--                            (click)="loginService.googleSignin()">-->
+<!--    Login-->
+<!--</button>-->
+<!--</ng-template>-->
 <header>
     <nav class="container">
         <div class="header-image">
