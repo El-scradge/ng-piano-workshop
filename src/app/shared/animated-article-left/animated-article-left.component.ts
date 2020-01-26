@@ -4,6 +4,7 @@ import {ModalService} from "../modal/modal.service";
 import {FormAddArticleComponent} from "../forms/form-add-article/form-add-article.component";
 import {ArticlesService} from "../../services/articles.service";
 import {EditingService} from "../../services/editing.service";
+import { AngularFireStorage } from '@angular/fire/storage';
 
 @Component({
   selector: 'app-animated-article-left',
@@ -16,11 +17,13 @@ export class AnimatedArticleLeftComponent implements OnInit {
   type;
   editMode;
   subscriptions = [];
+  image;
   @Input() article;
   constructor(
     private modal: ModalService,
     private articleService: ArticlesService,
-    private editService: EditingService
+    private editService: EditingService,
+    private storage: AngularFireStorage,
   ) {
     this.subscriptions.push(this.editService.editMode.subscribe( data => {
           this.editMode = data;
@@ -31,6 +34,8 @@ export class AnimatedArticleLeftComponent implements OnInit {
 
   ngOnInit() {
     this.type = this.article.type;
+    const ref = this.storage.ref(this.article.attributes.image);
+    this.image = ref.getDownloadURL();
   }
 
   editArticle() {

@@ -1,6 +1,10 @@
 <section class="grid-x {{article.attributes.bg}}-content">
     <div class="container temp-spacer grid-x">
-        <aside class="cell large-4 article__image--left"> image here</aside>
+        <aside class="cell large-4 article__image--left">
+
+            <img [src]="image" alt="">
+            {{article.attributes.image}}
+        </aside>
         <article [@loadTriggerLeft]="'inLeft'" class="article__main cell large-8">
             <h3>{{article.attributes.title}}</h3>
             <p>{{article.attributes.content}}</p>

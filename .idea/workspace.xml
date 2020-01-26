@@ -36,14 +36,14 @@
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nt-angular-test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nt-angluar-test2" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -74,8 +74,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -116,7 +116,13 @@
       <workItem from="1579430414069" duration="9000000" />
       <workItem from="1579527169685" duration="1414000" />
       <workItem from="1579530317445" duration="827000" />
-      <workItem from="1579694430966" duration="201000" />
+      <workItem from="1579694430966" duration="1418000" />
+      <workItem from="1579883532235" duration="22000" />
+      <workItem from="1579985877562" duration="1424000" />
+      <workItem from="1580038559462" duration="13789000" />
+      <workItem from="1580059310285" duration="687000" />
+      <workItem from="1580060039698" duration="653000" />
+      <workItem from="1580060728298" duration="6065000" />
     </task>
     <servers />
   </component>
@@ -124,33 +130,41 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="748" y="456" key="FileChooserDialogImpl" timestamp="1579528726078">
+    <state x="748" y="456" key="FileChooserDialogImpl" timestamp="1579883548868">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="748" y="456" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1579528726078" />
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom" timestamp="1579694701619">
+    <state x="748" y="456" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1579883548868" />
+    <state width="1788" height="287" key="GridCell.Tab.0.bottom" timestamp="1580068180036">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1579694701619" />
-    <state width="1877" height="287" key="GridCell.Tab.0.center" timestamp="1579694701618">
+    <state width="1788" height="287" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1580068180036" />
+    <state width="1788" height="287" key="GridCell.Tab.0.center" timestamp="1580068180036">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1579694701618" />
-    <state width="1877" height="287" key="GridCell.Tab.0.left" timestamp="1579694701617">
+    <state width="1788" height="287" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1580068180036" />
+    <state width="1788" height="287" key="GridCell.Tab.0.left" timestamp="1580068180036">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1579694701617" />
-    <state width="1877" height="287" key="GridCell.Tab.0.right" timestamp="1579694701619">
+    <state width="1788" height="287" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1580068180036" />
+    <state width="1788" height="287" key="GridCell.Tab.0.right" timestamp="1580068180036">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1579694701619" />
-    <state x="624" y="332" key="run.anything.popup" timestamp="1579200438224">
+    <state width="1788" height="287" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1580068180036" />
+    <state x="424" y="348" key="SettingsEditor" timestamp="1580062267629">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="624" y="332" key="run.anything.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1579200438224" />
-    <state x="631" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1579200267304">
+    <state x="424" y="348" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1580062267629" />
+    <state x="100" y="105" width="1715" height="1200" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1580039866177">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="631" y="319" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1579200267304" />
+    <state x="100" y="105" width="1715" height="1200" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1580039866177" />
+    <state x="624" y="332" key="run.anything.popup" timestamp="1580063089098">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="624" y="332" key="run.anything.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1580063089098" />
+    <state x="631" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1580063088425">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="631" y="319" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1580063088425" />
   </component>
 </project>

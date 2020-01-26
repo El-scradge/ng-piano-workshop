@@ -3,6 +3,14 @@ import { Component, OnInit } from '@angular/core';
 import { ModalRef } from '../../modal/modal-ref';
 import {ModalConfig} from "../../modal/modal-config";
 import {NgForm} from "@angular/forms";
+import {ImageEncodeService} from "../../../services/image-encode.service";
+import {DomSanitizer} from "@angular/platform-browser";
+import {AngularFireStorage} from "@angular/fire/storage";
+
+
+class ImageSnippet {
+  constructor(public src: string, public file: File) {}
+}
 
 @Component({
   selector: 'app-form-add-article',
@@ -16,12 +24,16 @@ export class FormAddArticleComponent implements OnInit {
    */
   public inputData;
 
-  public formData = { title: '', content: '',};
+  base64Image: string;
+  image;
+
+  public formData = { title: '', content: '', image: '', bg: ''};
 
   private id;
   constructor(
-    private modal: ModalRef,
-    public config: ModalConfig
+      private modal: ModalRef,
+      public config: ModalConfig,
+      private storage: AngularFireStorage,
   ) {
     this.inputData = this.config.data;
   }
@@ -32,6 +44,15 @@ export class FormAddArticleComponent implements OnInit {
       this.formData = this.inputData.content.attributes;
       this.id = this.inputData.content.id;
     }
+  }
+
+
+  addImage(event) {
+    const file = event.target.files[0];
+    console.log('file', file);
+    const filePath = 'user-images/' + file.name;
+    const task = this.storage.upload(filePath, file);
+    this.formData.image = filePath;
   }
 
   /**

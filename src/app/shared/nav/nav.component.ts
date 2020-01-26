@@ -1,6 +1,8 @@
 import {Component, OnDestroy} from '@angular/core';
 import {EditingService} from '../../services/editing.service';
 import {LoginService} from "../../services/login.service";
+import { AngularFireAuth } from '@angular/fire/auth';
+import { auth } from 'firebase/app';
 
 @Component({
   selector: 'app-nav',
@@ -15,6 +17,7 @@ export class NavComponent implements OnDestroy {
   constructor(
       private editService: EditingService,
       public loginService: LoginService,
+      public afAuth: AngularFireAuth
   ) {
     this.subscriptions.push(this.editService.editMode.subscribe( data => {
       this.editMode = data;
@@ -30,4 +33,12 @@ export class NavComponent implements OnDestroy {
   toggleEditMode() {
     this.editService.editMode.next(!this.editMode);
   }
+
+  login() {
+    this.afAuth.auth.signInWithPopup(new auth.GoogleAuthProvider())
+  }
+  logout() {
+    this.afAuth.auth.signOut();
+  }
 }
+

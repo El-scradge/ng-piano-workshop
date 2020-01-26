@@ -4,7 +4,17 @@
 
 export const environment = {
   production: false,
-  api: 'https://piano-workshop-f682d.firebaseio.com/'
+  api: 'https://piano-workshop-f682d.firebaseio.com/',
+  firebaseConfig: {
+    apiKey: 'AIzaSyD9977daGAMK5d6ZNgaRcrMzHYtdIDp_iQ',
+    authDomain: 'piano-workshop-f682d.firebaseapp.com',
+    databaseURL: 'https://piano-workshop-f682d.firebaseio.com',
+    projectId: 'piano-workshop-f682d',
+    storageBucket: 'piano-workshop-f682d.appspot.com',
+    messagingSenderId: '66046302744',
+    appId: '1:66046302744:web:7aa62c888edd87f647416d',
+    measurementId: 'G-FW35SCFW5W'
+  }
 };
 
 /*

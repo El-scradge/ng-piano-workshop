@@ -37,6 +37,7 @@ export class ArticlesService {
   /**
    * saves the data from all articles to the firebase server
    * @param data
+   * @todo alerts service for responses
    */
   saveArticles(data) {
 

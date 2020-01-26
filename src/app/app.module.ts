@@ -15,8 +15,13 @@ import {HttpClientModule} from '@angular/common/http';
 import {ArticlesService} from "./services/articles.service";
 import {ApiCallsService} from "./services/api-calls.service";
 import {FormsModule} from "@angular/forms";
-import {AngularFireAuth} from "@angular/fire/auth";
 import {AngularFireModule} from "@angular/fire";
+import {environment} from "../environments/environment";
+import {AngularFireStorageModule} from "@angular/fire/storage";
+import {AngularFirestoreModule} from "@angular/fire/firestore";
+import {AngularFireAuthModule} from "@angular/fire/auth";
+import {AngularFireDatabaseModule} from "@angular/fire/database";
+import {AngularFireFunctionsModule} from "@angular/fire/functions";
 
 @NgModule({
   declarations: [
@@ -35,7 +40,12 @@ import {AngularFireModule} from "@angular/fire";
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+      AngularFireAuthModule,
+      AngularFireDatabaseModule,
+      AngularFireFunctionsModule,
+      AngularFireStorageModule
   ],
   providers: [
     SharedModule,

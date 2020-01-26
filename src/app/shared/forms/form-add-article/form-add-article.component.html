@@ -16,5 +16,10 @@
 
     <label for="content">Area Content</label>
     <textarea [(ngModel)]="formData.content" name="content" id="content" cols="30" rows="10"></textarea>
+    <input type="file" id="fileElem"
+
+           accept="image/*"
+           (change)="addImage($event)">
+    <img [src]="formData.image" alt="" *ngIf="formData.image">
     <button class="button" type="submit" [disabled]="!articleForm.valid">Save</button>
 </form>
