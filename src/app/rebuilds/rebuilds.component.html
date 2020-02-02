@@ -3,12 +3,14 @@
         (click)="onAddItem()">
     Add Item
 </button>
+
 <section class="home-content">
     <div class=" container temp-spacer">
         <div class="text-align-virt">
             <div class="top-section">
                 <H1>Rebuilds</H1>
             </div>
+            <button class="button" *ngIf="editMode" (click)="onEditTitle()">Edit Title</button>
             <p>
                 When it comes to tuning I will give your piano the time and attention it needs to
                 achieve the best possible result, be it a Victorian wooden framed instrument or a full
@@ -25,8 +27,10 @@
                 I also offer friendly advice on how best to care for your instrument, its value for
                 insurance purposes and help with buying, selling and even transporting your piano.
             </p>
+            <app-page-title [content]="titleContent"></app-page-title>
         </div>
     </div>
+
 
 </section>
 <ng-container *ngFor="let article of articles; let i = index">

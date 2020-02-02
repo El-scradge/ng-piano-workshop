@@ -12,6 +12,8 @@ import {FormsModule} from "@angular/forms";
 import { AnimatedArticleLeftComponent } from './animated-article-left/animated-article-left.component';
 import { AnimatedArticleRightComponent } from './animated-article-right/animated-article-right.component';
 import { LoginComponent } from './forms/login/login.component';
+import { PageTitleComponent } from './page-title/page-title.component';
+import { TitleFormComponent } from './forms/title-form/title-form.component';
 
 
 
@@ -23,7 +25,9 @@ import { LoginComponent } from './forms/login/login.component';
     FormAddArticleComponent,
     AnimatedArticleLeftComponent,
     AnimatedArticleRightComponent,
-    LoginComponent
+    LoginComponent,
+    PageTitleComponent,
+    TitleFormComponent,
   ],
   imports: [
     CommonModule,
@@ -34,11 +38,12 @@ import { LoginComponent } from './forms/login/login.component';
     exports: [
       NavComponent,
       FooterComponent,
+        PageTitleComponent,
       AnimatedArticleLeftComponent,
       AnimatedArticleRightComponent,
       ModalModule
     ],
   providers: [ModalService],
-  entryComponents: [FormAddArticleComponent]
+  entryComponents: [FormAddArticleComponent, TitleFormComponent]
 })
 export class SharedModule { }

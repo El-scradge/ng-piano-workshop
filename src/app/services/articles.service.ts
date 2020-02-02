@@ -34,6 +34,10 @@ export class ArticlesService {
     return this.apiCalls.getData({type: type});
   }
 
+  getTitle() {
+    return this.apiCalls.getData({type: 'title'});
+  }
+
   /**
    * saves the data from all articles to the firebase server
    * @param data
@@ -57,5 +61,27 @@ export class ArticlesService {
       );
     }
 
+  }
+  saveTitle(data) {
+
+    if (data.id) {
+      this.apiCalls.updateData(data).subscribe(
+          response => {
+            console.log('saved data ', data);
+          },
+          errors => {
+            console.log(errors);
+          }
+      );
+    } else {
+      this.apiCalls.setData(data).subscribe(
+          response => {
+            console.log('saved data ', data);
+          },
+          errors => {
+            console.log(errors);
+          }
+      );
+    }
   }
 }

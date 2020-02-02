@@ -39,7 +39,6 @@ export class FormAddArticleComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.inputData);
     if (this.inputData.content.id) {
       this.formData = this.inputData.content.attributes;
       this.id = this.inputData.content.id;
@@ -49,10 +48,9 @@ export class FormAddArticleComponent implements OnInit {
 
   addImage(event) {
     const file = event.target.files[0];
-    console.log('file', file);
     const filePath = 'user-images/' + file.name;
     const task = this.storage.upload(filePath, file);
-    this.formData.image = filePath;
+    this.image = filePath;
   }
 
   /**
@@ -64,8 +62,9 @@ export class FormAddArticleComponent implements OnInit {
    */
 
   onAddArticle(formData: NgForm) {
-    const data = {type: this.inputData.type, attributes: formData.form.value, id: this.id};
-    console.log('form data', data);
+    let formAttributes = formData.form.value;
+    formAttributes.image = this.image;
+    const data = {type: this.inputData.type, attributes: formAttributes, id: this.id};
     this.modal.close(data);
   }
 }

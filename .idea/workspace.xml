@@ -44,7 +44,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Users\scradge\Code\ng-piano-workshop\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -123,6 +123,9 @@
       <workItem from="1580059310285" duration="687000" />
       <workItem from="1580060039698" duration="653000" />
       <workItem from="1580060728298" duration="6065000" />
+      <workItem from="1580140851796" duration="612000" />
+      <workItem from="1580406576585" duration="9973000" />
+      <workItem from="1580645596563" duration="16913000" />
     </task>
     <servers />
   </component>
@@ -134,22 +137,22 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="748" y="456" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1579883548868" />
-    <state width="1788" height="287" key="GridCell.Tab.0.bottom" timestamp="1580068180036">
+    <state width="1702" height="153" key="GridCell.Tab.0.bottom" timestamp="1580675525974">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1788" height="287" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1580068180036" />
-    <state width="1788" height="287" key="GridCell.Tab.0.center" timestamp="1580068180036">
+    <state width="1702" height="153" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1580675525974" />
+    <state width="1702" height="153" key="GridCell.Tab.0.center" timestamp="1580675525974">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1788" height="287" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1580068180036" />
-    <state width="1788" height="287" key="GridCell.Tab.0.left" timestamp="1580068180036">
+    <state width="1702" height="153" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1580675525974" />
+    <state width="1702" height="153" key="GridCell.Tab.0.left" timestamp="1580675525974">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1788" height="287" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1580068180036" />
-    <state width="1788" height="287" key="GridCell.Tab.0.right" timestamp="1580068180036">
+    <state width="1702" height="153" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1580675525974" />
+    <state width="1702" height="153" key="GridCell.Tab.0.right" timestamp="1580675525974">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1788" height="287" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1580068180036" />
+    <state width="1702" height="153" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1580675525974" />
     <state x="424" y="348" key="SettingsEditor" timestamp="1580062267629">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>

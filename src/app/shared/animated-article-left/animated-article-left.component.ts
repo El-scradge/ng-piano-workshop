@@ -33,9 +33,9 @@ export class AnimatedArticleLeftComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log('article', this.article);
     this.type = this.article.type;
-    const ref = this.storage.ref(this.article.attributes.image);
-    this.image = ref.getDownloadURL();
+    this.getImage();
   }
 
   editArticle() {
@@ -43,6 +43,13 @@ export class AnimatedArticleLeftComponent implements OnInit {
       .afterClosed.subscribe( response => {
       this.articleService.saveArticles(response);
     });
+  }
+
+  getImage() {
+    if (this.article.attributes.image) {
+      const ref = this.storage.ref(this.article.attributes.image);
+      this.image = ref.getDownloadURL();
+    }
   }
 
 }

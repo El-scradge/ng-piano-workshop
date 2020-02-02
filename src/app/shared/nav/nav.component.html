@@ -1,15 +1,4 @@
-<button class="button btn--edit-home"
-                 (click)="toggleEditMode()">
-    Edit mode toggle
-</button>
-<div *ngIf="afAuth.user | async as user; else showLogin">
-    <h1>Hello {{ user.displayName }}!</h1>
-    <button class="button" (click)="logout()">Logout</button>
-</div>
-<ng-template #showLogin>
-    <p>Please login.</p>
-    <button class="button" (click)="login()">Login with Google</button>
-</ng-template>
+
 <header>
     <nav class="container">
         <div class="header-image">
@@ -26,6 +15,20 @@
     </nav>
 
 </header>
+<div class="edit-menu">
+    <div *ngIf="afAuth.user | async as user; else showLogin">
+        <p>Hello {{ user.displayName }}!</p>
+        <button class="button" (click)="logout()">Logout</button>
+    </div>
+    <ng-template #showLogin>
+        <button class="button" (click)="login()">Login with Google</button>
+    </ng-template>
+    <button class="button btn--edit-home"
+            *ngIf="afAuth.user | async"
+            (click)="toggleEditMode()">
+        Edit mode toggle
+    </button>
+</div>
 
 
 
