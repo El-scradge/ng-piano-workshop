@@ -31,3 +31,7 @@ a {
     color: lighten($primary, 10%);
   }
 }
+
+p {
+  white-space: pre-line;
+}

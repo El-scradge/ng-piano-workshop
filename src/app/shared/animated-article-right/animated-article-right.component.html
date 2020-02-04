@@ -4,7 +4,10 @@
             <h3>{{article.attributes.title}}</h3>
             <p>{{article.attributes.content}}</p>
         </article>
-        <aside class="cell large-4 article__image--right"> image here</aside>
+        <aside class="cell large-4 article__image--right">
+            <div class="article__image--content"
+                 [ngStyle]="{'background-image': 'url(' + (image | async)  + ')'}" ></div>
+        </aside>
     </div>
     <button class="button btn-edit" *ngIf="editMode"  (click)="editArticle()">edit</button>
 </section>

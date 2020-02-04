@@ -2,7 +2,7 @@
     <div class="container temp-spacer grid-x">
         <aside class="cell large-4 article__image--left">
 
-            <img [src]="image | async" alt="" *ngIf="image">
+            <div class="article__image--content" [ngStyle]="{'background-image': 'url(' + (image | async)  + ')'}"></div>
         </aside>
         <article [@loadTriggerLeft]="'inLeft'" class="article__main cell large-8">
             <h3>{{article.attributes.title}}</h3>

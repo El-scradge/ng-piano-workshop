@@ -1,1 +1,2 @@
-<p>page-title works!</p>
+<p *ngIf="titleContent">{{titleContent.attributes.content}}</p>
+<button class="button" *ngIf="editMode" (click)="onEditTitle()">Edit Title</button>

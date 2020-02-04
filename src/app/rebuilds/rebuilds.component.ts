@@ -37,7 +37,7 @@ export class RebuildsComponent implements OnInit, OnDestroy {
       private titleService: TitleServiceService
   ) {
     this.getArticles();
-    this.getTitle();
+
     this.subscriptions.push(this.editService.editMode.subscribe(data => {
       this.editMode = data;
     }));
@@ -62,13 +62,7 @@ export class RebuildsComponent implements OnInit, OnDestroy {
     });
   }
 
-  onEditTitle() {
-    this.modal.open(TitleFormComponent, {data: {title: 'Edit page title', content:  this.titleContent, page: this.type}})
-        .afterClosed.subscribe( response => {
-      this.articleService.saveTitle(response);
-    });
-    this.getTitle();
-  }
+
 
   /**
    * gets the articles for the french polishing pages
@@ -79,11 +73,4 @@ export class RebuildsComponent implements OnInit, OnDestroy {
         })
     );
   }
-
-  getTitle() {
-    this.subscriptions.push( this.articleService.getTitle().subscribe( data => {
-      console.log('title', data);
-    }));
-  }
-
 }

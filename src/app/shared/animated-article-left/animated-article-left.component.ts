@@ -18,6 +18,7 @@ export class AnimatedArticleLeftComponent implements OnInit {
   editMode;
   subscriptions = [];
   image;
+  imageUrl;
   @Input() article;
   constructor(
     private modal: ModalService,
@@ -33,7 +34,6 @@ export class AnimatedArticleLeftComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('article', this.article);
     this.type = this.article.type;
     this.getImage();
   }

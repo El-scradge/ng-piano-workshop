@@ -4,6 +4,7 @@ import {FormAddArticleComponent} from "../forms/form-add-article/form-add-articl
 import {ModalService} from "../modal/modal.service";
 import {ArticlesService} from "../../services/articles.service";
 import {EditingService} from "../../services/editing.service";
+import { AngularFireStorage } from "@angular/fire/storage";
 
 @Component({
   selector: 'app-animated-article-right',
@@ -16,12 +17,14 @@ export class AnimatedArticleRightComponent implements OnInit {
   type;
   editMode;
   subscriptions = [];
+  image;
   @Input() article;
 
   constructor(
       private modal: ModalService,
       private articleService: ArticlesService,
       private editService: EditingService,
+      private storage: AngularFireStorage,
   ) {
     this.subscriptions.push(this.editService.editMode.subscribe( (data) => {
       this.editMode = data;
@@ -31,6 +34,7 @@ export class AnimatedArticleRightComponent implements OnInit {
 
   ngOnInit() {
     this.type = this.article.type;
+    this.getImage();
   }
 
   editArticle() {
@@ -38,6 +42,14 @@ export class AnimatedArticleRightComponent implements OnInit {
         .afterClosed.subscribe( response => {
       this.articleService.saveArticles(response);
     });
+  }
+
+  getImage() {
+
+    if (this.article.attributes.image) {
+      const ref = this.storage.ref(this.article.attributes.image);
+      this.image = ref.getDownloadURL();
+    }
   }
 
 }

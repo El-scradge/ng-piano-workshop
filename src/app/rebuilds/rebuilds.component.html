@@ -10,24 +10,7 @@
             <div class="top-section">
                 <H1>Rebuilds</H1>
             </div>
-            <button class="button" *ngIf="editMode" (click)="onEditTitle()">Edit Title</button>
-            <p>
-                When it comes to tuning I will give your piano the time and attention it needs to
-                achieve the best possible result, be it a Victorian wooden framed instrument or a full
-                size grand in a concert hall.
-                <br>
-                I therefore limit my appointments mostly to just three a
-                day spending between one and two hours on average.
-                <br>
-                My restoration and piano
-                manufacturing qualifications mean I am familiar with all aspects of repair and
-                regulation and I carry the specialist tools and materials for most jobs with me on the
-                road.
-                <br>
-                I also offer friendly advice on how best to care for your instrument, its value for
-                insurance purposes and help with buying, selling and even transporting your piano.
-            </p>
-            <app-page-title [content]="titleContent"></app-page-title>
+            <app-page-title [type]="type"></app-page-title>
         </div>
     </div>
 

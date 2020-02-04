@@ -19,12 +19,13 @@ export class TitleFormComponent implements OnInit {
      public config: ModalConfig
  ) {
    this.inputData = this.config.data;
+   console.log('input data', this.inputData);
  }
 
   ngOnInit() {
-   if (this.inputData.content.id) {
+   if (this.inputData.content) {
      this.formData = this.inputData.content.attributes;
-     this.id = this.inputData.content.id;
+     this.id = this.inputData.id;
    }
   }
 
@@ -34,6 +35,7 @@ export class TitleFormComponent implements OnInit {
      page: this.inputData.page, ...formHTMLAttributes},
      id: this.id
      };
+
    this.modal.close(data);
   }
 }
