@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5 {
   justify-content: center;
 }
 
+.center-text {
+  text-align: center;
+}
+
 a {
   color: $primary;
   &:hover {
@@ -34,4 +38,7 @@ a {
 
 p {
   white-space: pre-line;
+}
+option {
+  color: black;
 }

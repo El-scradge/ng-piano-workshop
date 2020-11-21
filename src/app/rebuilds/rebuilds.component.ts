@@ -26,7 +26,7 @@ export class RebuildsComponent implements OnInit, OnDestroy {
    */
   type = 'rebuilds';
 
-  titleContent = 'test';
+  titleContent;
 
   subscriptions = [];
 
@@ -37,7 +37,7 @@ export class RebuildsComponent implements OnInit, OnDestroy {
       private titleService: TitleServiceService
   ) {
     this.getArticles();
-
+    this.getTitle();
     this.subscriptions.push(this.editService.editMode.subscribe(data => {
       this.editMode = data;
     }));
@@ -72,5 +72,13 @@ export class RebuildsComponent implements OnInit, OnDestroy {
           this.articles = data;
         })
     );
+  }
+  getTitle() {
+    this.subscriptions.push(this.articleService.getTitle().subscribe(data => {
+      const filteredTitle = data.filter((title) => {
+        return title.attributes.page === this.type;
+      });
+      this.titleContent = filteredTitle[0];
+    }));
   }
 }

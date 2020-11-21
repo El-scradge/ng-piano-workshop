@@ -12,7 +12,7 @@ import {ModalConfig} from "../../modal/modal-config";
 export class TitleFormComponent implements OnInit {
 
   public inputData;
-  public formData = { content: ''};
+  public formData = { content: '', bg: ''};
   private id;
  constructor(
      private modal: ModalRef,

@@ -1,20 +1,27 @@
 
 <header>
-    <nav class="container">
+
+    <div class="container" style="position: relative">
         <div class="header-image">
             <img src="/assets/img/logo.png" alt="main logo">
         </div>
-        <ul>
-            <li class="mobile-logo"></li>
-            <li routerLink="/home" class="piano-key--animated"><a routerLink="/home">Home</a></li>
-            <li routerLink="/rebuilds" class="piano-key--animated"><a routerLink="/rebuilds">Rebuilds</a></li>
-            <li routerLink="/french-polishing" class="piano-key--animated"><a>French Polishing</a></li>
-            <li routerLink="/restorations" class="piano-key--animated"><a>Restorations</a></li>
-            <li routerLink="/about" class="piano-key--animated"><a>About Us</a></li>
-        </ul>
-    </nav>
+        <nav [ngClass]="{'menu-open' : !menuOpen}">
+            <ul>
+                <li class="mobile-logo"><img src="/assets/img/logo.png" alt="main logo"></li>
+                <li routerLink="/home" class="piano-key--animated"><a routerLink="/home">Home</a></li>
+                <li routerLink="/rebuilds" class="piano-key--animated"><a routerLink="/rebuilds">Rebuilds</a></li>
+                <li routerLink="/french-polishing" class="piano-key--animated"><a>French Polishing</a></li>
+                <li routerLink="/restorations" class="piano-key--animated"><a>Restorations</a></li>
+                <li routerLink="/about" class="piano-key--animated"><a>About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
 
 </header>
+<div class="menu-opener" (click)="menuOpen = !menuOpen">
+    <div class="burger" [ngClass]="{'burger-open' : menuOpen}"></div>
+</div>
 <div class="edit-menu">
     <div *ngIf="afAuth.user | async as user">
         <p>Hello {{ user.displayName }}!</p>

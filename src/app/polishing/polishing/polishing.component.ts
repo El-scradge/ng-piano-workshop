@@ -18,6 +18,8 @@ export class PolishingComponent implements OnInit, OnDestroy {
    */
   articles: ApiObject[];
 
+  titleContent;
+
   /**
    * sets the type of article for the page, so that the correct url is used.
    * @type {string}
@@ -32,6 +34,7 @@ export class PolishingComponent implements OnInit, OnDestroy {
     private editService: EditingService,
   ) {
     this.getArticles();
+    this.getTitle();
     this.subscriptions.push(this.editService.editMode.subscribe(data => {
       this.editMode = data;
     }));
@@ -64,5 +67,13 @@ export class PolishingComponent implements OnInit, OnDestroy {
         this.articles = data;
       })
     );
+  }
+  getTitle() {
+    this.subscriptions.push(this.articleService.getTitle().subscribe(data => {
+      const filteredTitle = data.filter((title) => {
+        return title.attributes.page === this.type;
+      });
+      this.titleContent = filteredTitle[0];
+    }));
   }
 }

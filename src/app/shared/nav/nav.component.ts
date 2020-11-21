@@ -13,6 +13,7 @@ export class NavComponent implements OnDestroy {
 
   editMode;
 
+  menuOpen = false;
   subscriptions = [];
   constructor(
       private editService: EditingService,

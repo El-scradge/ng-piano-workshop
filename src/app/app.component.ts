@@ -23,6 +23,7 @@ export class AppComponent implements OnInit {
       private route: ActivatedRoute,
       private apiCalls: ApiCallsService,
       private afAuth: AngularFireAuth
+
   ) {
     this.subscriptions.push(this.apiCalls.getSettings().subscribe(
         data => {
@@ -52,4 +53,5 @@ export class AppComponent implements OnInit {
   }
   getSettings() {
   }
+
 }

@@ -77,8 +77,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -130,7 +130,7 @@
       <workItem from="1605641177454" duration="6813000" />
       <workItem from="1605726211436" duration="11042000" />
       <workItem from="1605819196230" duration="2500000" />
-      <workItem from="1605961974019" duration="5427000" />
+      <workItem from="1605961974019" duration="14226000" />
     </task>
     <servers />
   </component>
@@ -138,22 +138,22 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1662" height="209" key="GridCell.Tab.0.bottom" timestamp="1605822037678">
+    <state width="1859" height="209" key="GridCell.Tab.0.bottom" timestamp="1605991665252">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1662" height="209" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1605822037678" />
-    <state width="1662" height="209" key="GridCell.Tab.0.center" timestamp="1605822037678">
+    <state width="1859" height="209" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1605991665252" />
+    <state width="1859" height="209" key="GridCell.Tab.0.center" timestamp="1605991665252">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1662" height="209" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1605822037678" />
-    <state width="1662" height="209" key="GridCell.Tab.0.left" timestamp="1605822037678">
+    <state width="1859" height="209" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1605991665252" />
+    <state width="1859" height="209" key="GridCell.Tab.0.left" timestamp="1605991665252">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1662" height="209" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1605822037678" />
-    <state width="1662" height="209" key="GridCell.Tab.0.right" timestamp="1605822037678">
+    <state width="1859" height="209" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1605991665252" />
+    <state width="1859" height="209" key="GridCell.Tab.0.right" timestamp="1605991665252">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1662" height="209" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1605822037678" />
+    <state width="1859" height="209" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1605991665252" />
     <state x="1436" y="117" width="1777" height="1200" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605647471191">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>

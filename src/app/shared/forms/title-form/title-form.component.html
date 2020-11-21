@@ -4,6 +4,23 @@
             <label for="content">Title content</label>
             <textarea [(ngModel)]="formData.content" name="content" id="content" cols="30" rows="10">    </textarea>
         </div>
+        <div class="large-6 small-12">
+            <label for="bg">Select background</label>
+            <select name="bg" id="bg" [(ngModel)]="formData.bg">
+                <option value="home">Black Piano</option>
+                <option value="bg2">Light Piano</option>
+                <option value="dark">Dark</option>
+                <option value="piano-goldwork">Piano Goldwork</option>
+                <option value="string-casing">String Casings</option>
+                <option value="restringing">Restringing</option>
+                <option value="keybed">Keybeds</option>
+                <option value="action">Action on wall</option>
+                <option value="steinway-polished">Steinway Polished</option>
+                <option value="kate-working">Kate Working</option>
+                <option value="aiden-working">Aiden Working</option>
+                <option value="adjustments">Adjustments</option>
+            </select>
+        </div>
 
     </div>
     <button class="button" type="submit" [disabled]="!titleForm.valid">Save</button>

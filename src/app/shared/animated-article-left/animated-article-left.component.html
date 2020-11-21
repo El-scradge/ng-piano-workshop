@@ -1,15 +1,16 @@
 <section class="grid-x {{article.attributes.bg}}-content">
-    <div class="container temp-spacer grid-x article">
+    <div class="container temp-spacer grid-x grid-margin-x article">
         <aside *ngIf="article.attributes.image"
                 [@loadTriggerLeft]="'inLeft'"
                class="cell large-4 article__image--left">
 
             <div class="article__image--content" [ngStyle]="{'background-image': 'url(' + (image | async)  + ')'}"></div>
         </aside>
-        <article [@loadTriggerLeft]="'inLeft'" class="article__main cell large-8">
+        <article [@loadTriggerLeft]="'inLeft'" class="article__main cell"
+                 [ngClass]="article.attributes.image ? 'large-8' : 'large-12'">
             <div class="article__content">
-                <h3>{{article.attributes.title}}</h3>
-                <p>{{article.attributes.content}}</p>
+                <h3 class="center-text">{{article.attributes.title}}</h3>
+                <p class="center-text">{{article.attributes.content}}</p>
             </div>
 
         </article>
