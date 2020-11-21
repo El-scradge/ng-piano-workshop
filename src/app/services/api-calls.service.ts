@@ -8,6 +8,9 @@ export interface ApiObject {
   type: string;
   attributes: object;
 }
+export interface SettingsObject {
+  published: string;
+}
 
 @Injectable({
   providedIn: 'root'
@@ -48,5 +51,17 @@ export class ApiCallsService {
         return articleArray;
       })
     );
+  }
+
+  getSettings() {
+    return this.http.get<SettingsObject>(environment.api + 'settings.json');
+  }
+
+  setPublished() {
+    return this.http.patch(environment.api + 'settings.json', {published: true});
+  }
+
+  setUnPublished() {
+    return this.http.patch(environment.api + 'settings.json', {published: false});
   }
 }

@@ -4,16 +4,17 @@
     Add Item
 </button>
 
-<section class="home-content">
-    <div class=" container temp-spacer">
-        <div class="text-align-virt">
-            <div class="top-section">
-                <H1>Rebuilds</H1>
+<section class="action-content header-content">
+    <article class="page-intro">
+        <div class="container">
+            <div class="text-align-virt">
+                <div class="top-section">
+                    <H1>Rebuilds</H1>
+                </div>
+                <app-page-title [type]="type"></app-page-title>
             </div>
-            <app-page-title [type]="type"></app-page-title>
         </div>
-    </div>
-
+    </article>
 
 </section>
 <ng-container *ngFor="let article of articles; let i = index">

@@ -1,5 +1,6 @@
-<app-nav></app-nav>
+<app-nav *ngIf="published || showNav"></app-nav>
 <div class="content__wrapper">
     <router-outlet></router-outlet>
 </div>
+{{published}}
 <app-footer></app-footer>

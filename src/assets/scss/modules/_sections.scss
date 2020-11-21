@@ -1,12 +1,12 @@
-.top-section{
-  margin-top: 20vh;
-}
 
 .temp-spacer {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
+.top-section {
+  text-align: center;
+  padding-bottom: 30px;
+}
 .homepage-tagline{
   position: relative;
   top: 15%;
@@ -30,7 +30,7 @@ section{
   position: relative;
   background-image: linear-gradient( rgba(0, 0, 0, 0.5),
           rgba(0, 0, 0, 0.5) ),
-          url("/assets/img/pinao-bg2.png");
+          url("/assets/img/pinao-bg2.jpg");
   z-index: 1;
   color: $primary-color;
   max-height: 60vh;
@@ -54,6 +54,54 @@ section{
   z-index: 1;
 }
 
+.string-casing-content {
+  background-image: url("/assets/img/string-cases.jpg");
+  position: relative;
+  z-index: 1;
+}
+.action-content {
+  background-image: url("/assets/img/action-on-wall.jpg");
+  position: relative;
+  z-index: 1;
+}
+.keybed-content {
+  background-image: url("/assets/img/keybed-on-table.jpg");
+  position: relative;
+  z-index: 1;
+}
+.kate-working-content {
+  background-image: url("/assets/img/kate-working.jpg");
+  position: relative;
+  z-index: 1;
+}
+.restringing-content {
+  background-image: url("/assets/img/restringing.jpg");
+  position: relative;
+  z-index: 1;
+}
+.steinway-polished-content {
+  background-image: url("/assets/img/steinway-polished.jpg");
+  position: relative;
+  z-index: 1;
+}
+.piano-goldwork-content {
+  background-image: url("/assets/img/piano-goldwork.jpg");
+  position: relative;
+  z-index: 1;
+}
+.aiden-working-content {
+  background-image: url("/assets/img/aiden-working.jpg");
+  position: relative;
+  z-index: 1;
+}
+.adjustments-content {
+  background-image: url("/assets/img/adjustments.jpg");
+  position: relative;
+  z-index: 1;
+}
+.header-content {
+  padding-top: 20vh;
+}
 .image-section {
   img {
     max-width: 300px;

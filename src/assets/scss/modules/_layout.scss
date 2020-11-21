@@ -1,5 +1,5 @@
 .container {
-  max-width: 1140px;
+  max-width: 1240px;
   width: 100%;
   margin: 0 auto;
 }
@@ -7,4 +7,9 @@
 .content__wrapper {
   min-height: 100vh;
   margin-bottom: -50px;
+}
+
+.page-intro {
+  padding: $baseline;
+  background: rgba(0,0,0, 0.7);
 }

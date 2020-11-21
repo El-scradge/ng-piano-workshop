@@ -60,9 +60,9 @@ export class PolishingComponent implements OnInit, OnDestroy {
    * gets the articles for the french polishing pages
    */
   getArticles() {
-  this.subscriptions.push( this.articleService.getArticles(this.type).subscribe( data => {
-      this.articles = data;
-    })
-  );
+    this.subscriptions.push( this.articleService.getArticles(this.type).subscribe( data => {
+        this.articles = data;
+      })
+    );
   }
 }

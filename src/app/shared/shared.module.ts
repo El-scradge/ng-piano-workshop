@@ -14,6 +14,8 @@ import { AnimatedArticleRightComponent } from './animated-article-right/animated
 import { LoginComponent } from './forms/login/login.component';
 import { PageTitleComponent } from './page-title/page-title.component';
 import { TitleFormComponent } from './forms/title-form/title-form.component';
+import {Ng2ImgMaxModule} from "ng2-img-max";
+
 
 
 
@@ -33,7 +35,8 @@ import { TitleFormComponent } from './forms/title-form/title-form.component';
     CommonModule,
     AppRoutingModule,
     ModalModule,
-    FormsModule
+    FormsModule,
+      Ng2ImgMaxModule
   ],
     exports: [
       NavComponent,

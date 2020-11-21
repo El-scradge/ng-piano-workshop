@@ -13,9 +13,10 @@ header {
   z-index: 200;
   width: 100%;
   top: 0;
+  background: rgba(0,0,0,0.6);
 
   .header-image{
-
+    margin-top: 5px;
     img{
       width:180px;
     }
@@ -24,6 +25,7 @@ header {
   nav {
     display: flex;
     ul {
+      transform: translateY(5px);
       display: flex;
       flex-wrap: wrap;
       padding: $baseline/2;

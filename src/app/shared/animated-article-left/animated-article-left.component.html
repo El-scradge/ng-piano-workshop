@@ -1,12 +1,17 @@
 <section class="grid-x {{article.attributes.bg}}-content">
-    <div class="container temp-spacer grid-x">
-        <aside class="cell large-4 article__image--left">
+    <div class="container temp-spacer grid-x article">
+        <aside *ngIf="article.attributes.image"
+                [@loadTriggerLeft]="'inLeft'"
+               class="cell large-4 article__image--left">
 
             <div class="article__image--content" [ngStyle]="{'background-image': 'url(' + (image | async)  + ')'}"></div>
         </aside>
         <article [@loadTriggerLeft]="'inLeft'" class="article__main cell large-8">
-            <h3>{{article.attributes.title}}</h3>
-            <p>{{article.attributes.content}}</p>
+            <div class="article__content">
+                <h3>{{article.attributes.title}}</h3>
+                <p>{{article.attributes.content}}</p>
+            </div>
+
         </article>
     </div>
     <button class="button btn-edit" *ngIf="editMode" (click)="editArticle()">edit</button>

@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import { Article, ArticlesService } from '../services/articles.service';
 import { ModalService } from '../shared/modal/modal.service';
 import { FormAddArticleComponent } from '../shared/forms/form-add-article/form-add-article.component';
@@ -6,33 +6,26 @@ import {ApiObject} from "../services/api-calls.service";
 import {EditingService} from "../services/editing.service";
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  selector: 'app-team',
+  templateUrl: './team.component.html',
+  styleUrls: ['./team.component.scss']
 })
-export class AboutComponent implements OnInit, OnDestroy {
+export class TeamComponent implements OnInit, OnDestroy {
 
   editMode;
-  /**
-   * The articles to be used on the page.
-   */
+
   articles: ApiObject[];
 
-  /**
-   * sets the type of article for the page, so that the correct url is used.
-   * @type {string}
-   */
-  type = 'about';
+  type: 'team';
 
   subscriptions = [];
-
   constructor(
       private articleService: ArticlesService,
       private modal: ModalService,
       private editService: EditingService,
   ) {
     this.getArticles();
-    this.subscriptions.push(this.editService.editMode.subscribe(data => {
+    this.subscriptions.push(this.editService.editMode.subscribe( data => {
       this.editMode = data;
     }));
   }
@@ -40,30 +33,25 @@ export class AboutComponent implements OnInit, OnDestroy {
   ngOnInit() {
   }
 
-  ngOnDestroy(): void {
+  ngOnDestroy() {
     this.subscriptions.map((sub) => sub.unsubscribe());
   }
-
   /**
    * opens the modal for creating articles on the page
    * This is returned from the after close area of the modal.
    */
   onAddItem() {
-    this.modal.open(FormAddArticleComponent, {data: {type: this.type, title: 'Create Article on page' + this.type}})
+    this.modal.open(FormAddArticleComponent, {data: {type: this.type, title: 'Add Team Member' + this.type}})
         .afterClosed.subscribe( response => {
       this.articleService.saveArticles(response);
       this.getArticles();
     });
   }
 
-  /**
-   * gets the articles for the french polishing pages
-   */
   getArticles() {
     this.subscriptions.push( this.articleService.getArticles(this.type).subscribe( data => {
           this.articles = data;
         })
     );
   }
-
 }

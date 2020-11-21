@@ -1,0 +1,23 @@
+
+
+
+<section class="home-content grid-x">
+    <div class="container temp-spacer">
+        <div class="top-section">
+            <H1 class="page-header">Admin</H1>
+            <div *ngIf="afAuth.user | async as user; else showLogin">
+                <h2>Hello {{ user.displayName }}!</h2>
+                <button class="button" (click)="logout()">Logout</button>
+                <button *ngIf="!settings.published" (click)="publish()" class="button">Publish Site</button>
+                <button *ngIf="settings.published" (click)="unPublish()" class="button">Un Publish Site</button>
+            </div>
+            <ng-template #showLogin>
+                <button class="button" (click)="login()">Login with Google</button>
+            </ng-template>
+
+
+
+        </div>
+    </div>
+
+</section>

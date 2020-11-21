@@ -5,6 +5,8 @@ import {PolishingComponent} from './polishing/polishing/polishing.component';
 import {RestorationsComponent} from './restorations/restorations/restorations.component';
 import {RebuildsComponent} from './rebuilds/rebuilds.component';
 import {AboutComponent} from './about/about.component';
+import {AdminComponent} from './admin/admin/admin.component';
+import {UnderConstructionComponent} from "./under-construction/under-construction.component";
 
 
 const routes: Routes = [
@@ -15,6 +17,11 @@ const routes: Routes = [
   },
   {
     path: 'home', component: HomeComponent
+  },
+  {
+    path: 'admin', component: AdminComponent
+  },
+  { path: 'waiting', component: UnderConstructionComponent
   },
   {
     path: 'french-polishing', component: PolishingComponent

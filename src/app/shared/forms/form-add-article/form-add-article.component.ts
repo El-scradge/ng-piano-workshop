@@ -3,10 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { ModalRef } from '../../modal/modal-ref';
 import {ModalConfig} from "../../modal/modal-config";
 import {NgForm} from "@angular/forms";
-import {ImageEncodeService} from "../../../services/image-encode.service";
-import {DomSanitizer} from "@angular/platform-browser";
-import {AngularFireStorage} from "@angular/fire/storage";
 
+import {AngularFireStorage} from "@angular/fire/storage";
+import { Ng2ImgMaxService } from 'ng2-img-max';
 
 class ImageSnippet {
   constructor(public src: string, public file: File) {}
@@ -26,6 +25,7 @@ export class FormAddArticleComponent implements OnInit {
 
   base64Image: string;
   image;
+  uploadedImage: File;
 
   public formData = { title: '', content: '', image: '', bg: ''};
 
@@ -34,6 +34,7 @@ export class FormAddArticleComponent implements OnInit {
       private modal: ModalRef,
       public config: ModalConfig,
       private storage: AngularFireStorage,
+      private ng2ImgMax: Ng2ImgMaxService
   ) {
     this.inputData = this.config.data;
   }
@@ -49,7 +50,15 @@ export class FormAddArticleComponent implements OnInit {
   addImage(event) {
     const file = event.target.files[0];
     const filePath = 'user-images/' + file.name;
-    const task = this.storage.upload(filePath, file);
+
+    this.ng2ImgMax.resizeImage(file, 720, 500).subscribe(
+        result => {
+          this.uploadedImage = new File([result], result.name);
+          const task = this.storage.upload(filePath, this.uploadedImage);
+        }
+    )
+
+
     this.image = filePath;
   }
 
@@ -67,4 +76,6 @@ export class FormAddArticleComponent implements OnInit {
     const data = {type: this.inputData.type, attributes: formAttributes, id: this.id};
     this.modal.close(data);
   }
+
+
 }

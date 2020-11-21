@@ -6,23 +6,20 @@
         </div>
         <ul>
             <li class="mobile-logo"></li>
-            <li class="piano-key--animated"><a routerLink="/home">Home</a></li>
-            <li class="piano-key--animated"><a routerLink="/rebuilds">Rebuilds</a></li>
-            <li class="piano-key--animated"><a routerLink="/french-polishing">French Polishing</a></li>
-            <li class="piano-key--animated"><a routerLink="/restorations">Restorations</a></li>
-            <li class="piano-key--animated"><a routerLink="/about" >About Us</a></li>
+            <li routerLink="/home" class="piano-key--animated"><a routerLink="/home">Home</a></li>
+            <li routerLink="/rebuilds" class="piano-key--animated"><a routerLink="/rebuilds">Rebuilds</a></li>
+            <li routerLink="/french-polishing" class="piano-key--animated"><a>French Polishing</a></li>
+            <li routerLink="/restorations" class="piano-key--animated"><a>Restorations</a></li>
+            <li routerLink="/about" class="piano-key--animated"><a>About Us</a></li>
         </ul>
     </nav>
 
 </header>
 <div class="edit-menu">
-    <div *ngIf="afAuth.user | async as user; else showLogin">
+    <div *ngIf="afAuth.user | async as user">
         <p>Hello {{ user.displayName }}!</p>
         <button class="button" (click)="logout()">Logout</button>
     </div>
-    <ng-template #showLogin>
-        <button class="button" (click)="login()">Login with Google</button>
-    </ng-template>
     <button class="button btn--edit-home"
             *ngIf="afAuth.user | async"
             (click)="toggleEditMode()">

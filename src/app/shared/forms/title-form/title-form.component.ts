@@ -19,7 +19,6 @@ export class TitleFormComponent implements OnInit {
      public config: ModalConfig
  ) {
    this.inputData = this.config.data;
-   console.log('input data', this.inputData);
  }
 
   ngOnInit() {

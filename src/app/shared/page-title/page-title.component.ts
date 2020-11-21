@@ -33,8 +33,9 @@ export class PageTitleComponent implements OnInit {
   }
 
   onEditTitle() {
-    const titleId = this.titleContent.id ? this.titleContent.id : null;
     const titleForm = this.titleContent ? this.titleContent : null;
+    const titleId = this.titleContent ? this.titleContent.id : null;
+
     this.modal.open(TitleFormComponent,
         {data:
                 {title: 'Edit page title', content: titleForm, page: this.type, id: titleId  }})
