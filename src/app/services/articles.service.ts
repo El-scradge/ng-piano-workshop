@@ -11,7 +11,9 @@ export interface Article extends ApiObject {
     content: string;
     bg: string;
     image?: string;
+    fileLink?: string;
     shown: boolean;
+    imageIsFile?: boolean;
   };
 }
 
@@ -60,6 +62,7 @@ export class ArticlesService {
         errors => { console.log(errors); }
       );
     }
+    this.getArticles(data.type);
 
   }
   saveTitle(data) {

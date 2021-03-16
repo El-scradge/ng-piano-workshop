@@ -25,10 +25,24 @@
 
     <label for="content">Area Content</label>
     <textarea [(ngModel)]="formData.content" name="content" id="content" cols="30" rows="10"></textarea>
-    <input type="file" id="fileElem"
-
-           accept="image/*"
-           (change)="addImage($event)">
-    <img [src]="formData.image" alt="" *ngIf="formData.image">
+    <label for="imageIsFile">Image from link</label>
+    <input type="checkbox" id="imageIsFile" name="imageIsFile" [(ngModel)]="formData.imageIsFile">
+    <div class="image-upload" *ngIf="!formData.imageIsFile">
+        <input type="file" id="fileElem"
+               accept="image/*"
+               (change)="addImage($event)">
+        <img [src]="formData.image" alt="" *ngIf="formData.image">
+    </div>
+    <div class="file-link" *ngIf="formData.imageIsFile">
+        <label for="fileLink">File link</label>
+        <input type="text" id="fileLink" name="fileLink" [(ngModel)]="formData.fileLink" >
+    </div>
+    <div class="images-container">
+        <div class="available-image"
+             (click)="selectImage(img.path)"
+             [ngStyle]="{'background-image': 'url(' + (img.imageDownloadPath | async)  + ')'}"
+             [ngClass]="img.path === image ? 'selected-image' : ''"
+             *ngFor="let img of images"></div>
+    </div>
     <button class="button" type="submit" [disabled]="!articleForm.valid">Save</button>
 </form>

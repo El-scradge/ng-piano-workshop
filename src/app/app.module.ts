@@ -25,6 +25,7 @@ import {AngularFireFunctionsModule} from "@angular/fire/functions";
 import { AdminComponent } from './admin/admin/admin.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
 import { TeamComponent } from './team/team.component';
+import { TuningComponent } from './tuning/tuning.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { TeamComponent } from './team/team.component';
     AboutComponent,
     AdminComponent,
     UnderConstructionComponent,
-    TeamComponent
+    TeamComponent,
+    TuningComponent
   ],
   imports: [
     BrowserModule,

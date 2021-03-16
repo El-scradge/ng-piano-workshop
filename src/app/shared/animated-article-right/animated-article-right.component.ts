@@ -49,6 +49,8 @@ export class AnimatedArticleRightComponent implements OnInit {
     if (this.article.attributes.image) {
       const ref = this.storage.ref(this.article.attributes.image);
       this.image = ref.getDownloadURL();
+    } else if (this.article.attributes.fileLink != null) {
+      this.image = this.article.attributes.fileLink;
     }
   }
 

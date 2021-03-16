@@ -7,10 +7,15 @@
                 <p class="center-text">{{article.attributes.content}}</p>
             </div>
         </article>
-        <aside *ngIf="article.attributes.image"
+        <aside *ngIf="article.attributes.image && !article.attributes.imageIsFile"
                [@loadTriggerRight]="'inRight'" class="cell article__image--right large-4">
             <div class="article__image--content"
                  [ngStyle]="{'background-image': 'url(' + (image | async)  + ')'}" ></div>
+        </aside>
+        <aside *ngIf="article.attributes.fileLink && article.attributes.imageIsFile"
+               [@loadTriggerRight]="'inRight'" class="cell article__image--right large-4">
+            <div class="article__image--content"
+                 [ngStyle]="{'background-image': 'url(' + image  + ')'}" ></div>
         </aside>
     </div>
     <button class="button btn-edit" *ngIf="editMode"  (click)="editArticle()">edit</button>

@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9e87e8f-1495-4c8f-bc99-430ffcd921d8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/polishing/polishing/polishing.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/rebuilds/rebuilds.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/rebuilds/rebuilds.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/shared.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/modules/_sections.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/modules/_sections.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.ZGlzdFxwaWFuby13b3Jrc2hvcA.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.ZGlzdFxwaWFuby13b3Jrc2hvcA.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/restorations/restorations/restorations.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/restorations/restorations/restorations.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/api-calls.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/api-calls.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/articles.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/articles.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/animated-article-left/animated-article-left.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/animated-article-left/animated-article-left.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/animated-article-left/animated-article-left.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/animated-article-left/animated-article-left.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/animated-article-right/animated-article-right.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/animated-article-right/animated-article-right.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/animated-article-right/animated-article-right.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/animated-article-right/animated-article-right.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/forms/form-add-article/form-add-article.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/nav/nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/nav/nav.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/modules/_article.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/modules/_article.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/modules/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/modules/_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.app.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +53,12 @@
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -45,7 +66,7 @@
     <property name="node.js.selected.package.tslint" value="C:\Users\scradge\Code\ng-piano-workshop\node_modules\tslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="ts.external.directory.path" value="C:\Users\scradge\Code\ng-piano-workshop\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -131,36 +152,21 @@
       <workItem from="1605726211436" duration="11042000" />
       <workItem from="1605819196230" duration="2500000" />
       <workItem from="1605961974019" duration="14226000" />
+      <workItem from="1606060616808" duration="13000" />
+      <workItem from="1610724325046" duration="22000" />
+      <workItem from="1610724377526" duration="611000" />
+      <workItem from="1610727551868" duration="1761000" />
+      <workItem from="1611141632964" duration="65000" />
+      <workItem from="1611141732125" duration="12000" />
+      <workItem from="1613496504915" duration="1888000" />
+      <workItem from="1613924414786" duration="9833000" />
+      <workItem from="1614016569938" duration="5960000" />
+      <workItem from="1614109057021" duration="1133000" />
+      <workItem from="1614426471999" duration="7129000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1859" height="209" key="GridCell.Tab.0.bottom" timestamp="1605991665252">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state width="1859" height="209" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1605991665252" />
-    <state width="1859" height="209" key="GridCell.Tab.0.center" timestamp="1605991665252">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state width="1859" height="209" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1605991665252" />
-    <state width="1859" height="209" key="GridCell.Tab.0.left" timestamp="1605991665252">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state width="1859" height="209" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1605991665252" />
-    <state width="1859" height="209" key="GridCell.Tab.0.right" timestamp="1605991665252">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state width="1859" height="209" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1605991665252" />
-    <state x="1436" y="117" width="1777" height="1200" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605647471191">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state x="1436" y="117" width="1777" height="1200" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1605647471191" />
-    <state x="528" y="322" width="672" height="678" key="search.everywhere.popup" timestamp="1605734912612">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state x="528" y="322" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1605734912612" />
   </component>
 </project>

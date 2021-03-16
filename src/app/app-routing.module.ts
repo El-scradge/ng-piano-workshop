@@ -7,6 +7,7 @@ import {RebuildsComponent} from './rebuilds/rebuilds.component';
 import {AboutComponent} from './about/about.component';
 import {AdminComponent} from './admin/admin/admin.component';
 import {UnderConstructionComponent} from "./under-construction/under-construction.component";
+import {TuningComponent} from "./tuning/tuning.component";
 
 
 const routes: Routes = [
@@ -34,6 +35,9 @@ const routes: Routes = [
   },
   {
     path: 'about', component: AboutComponent
+  },
+  {
+    path : 'tuning', component: TuningComponent
   }
 ];
 

@@ -4,16 +4,17 @@
 
 export const environment = {
   production: false,
-  api: 'https://piano-workshop-f682d.firebaseio.com/',
+  published: true,
+  api: 'https://the-piano-workshop.firebaseio.com/',
   firebaseConfig: {
-    apiKey: 'AIzaSyD9977daGAMK5d6ZNgaRcrMzHYtdIDp_iQ',
-    authDomain: 'piano-workshop-f682d.firebaseapp.com',
-    databaseURL: 'https://piano-workshop-f682d.firebaseio.com',
-    projectId: 'piano-workshop-f682d',
-    storageBucket: 'piano-workshop-f682d.appspot.com',
-    messagingSenderId: '66046302744',
-    appId: '1:66046302744:web:7aa62c888edd87f647416d',
-    measurementId: 'G-FW35SCFW5W'
+    apiKey: "AIzaSyAcnJ3XymLzXd6TOM-duBStpg0M357KInc",
+    authDomain: "the-piano-workshop.firebaseapp.com",
+    databaseURL: "https://the-piano-workshop.firebaseio.com",
+    projectId: "the-piano-workshop",
+    storageBucket: "the-piano-workshop.appspot.com",
+    messagingSenderId: "91374613668",
+    appId: "1:91374613668:web:992334263485cb72a72231",
+    measurementId: "G-QV0JCY1VRF"
   }
 };
 

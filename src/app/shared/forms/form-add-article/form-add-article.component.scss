@@ -1,0 +1,15 @@
+.available-image {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5px;
+}
+.images-container {
+  display: flex;
+}
+
+.selected-image {
+  border: solid red 2px;
+}

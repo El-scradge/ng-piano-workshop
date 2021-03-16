@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import firebase from 'firebase/app';
+import 'firebase/storage';
 import { ModalRef } from '../../modal/modal-ref';
 import {ModalConfig} from "../../modal/modal-config";
 import {NgForm} from "@angular/forms";
@@ -26,8 +27,8 @@ export class FormAddArticleComponent implements OnInit {
   base64Image: string;
   image;
   uploadedImage: File;
-
-  public formData = { title: '', content: '', image: '', bg: ''};
+  images = [];
+  public formData = { title: '', content: '', image: '', bg: '', fileLink: '', imageIsFile: true};
 
   private id;
   constructor(
@@ -40,6 +41,8 @@ export class FormAddArticleComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.image = this.inputData.content.attributes.image;
+    this.getSavedImages();
     if (this.inputData.content.id) {
       this.formData = this.inputData.content.attributes;
       this.id = this.inputData.content.id;
@@ -71,11 +74,32 @@ export class FormAddArticleComponent implements OnInit {
    */
 
   onAddArticle(formData: NgForm) {
-    let formAttributes = formData.form.value;
+    const formAttributes = formData.form.value;
     formAttributes.image = this.image;
     const data = {type: this.inputData.type, attributes: formAttributes, id: this.id};
     this.modal.close(data);
   }
 
+  getSavedImages() {
+     const storageRef = firebase.storage().ref();
+     const listRef = storageRef.child('user-images');
+     listRef.listAll().then((res) => {
+      res.items.forEach((itemRef) => {
+        console.log(itemRef.fullPath);
+        const imageRef = this.storage.ref(itemRef.fullPath);
+        const imagePath = imageRef.getDownloadURL();
+        const imageObject = {path: itemRef.fullPath, imageDownloadPath: imagePath };
+        this.images.push(imageObject);
+      });
+    }).catch((error) => {
+      // Uh-oh, an error occurred!
+    });
+     console.log(this.images);
+  }
+
+  selectImage(imagePath) {
+    console.log(`select ${imagePath}, current image is ${this.image}`);
+    this.image = imagePath;
+  }
 
 }
